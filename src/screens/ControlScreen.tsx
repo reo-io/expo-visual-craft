@@ -73,12 +73,9 @@ const ControlScreen: React.FC = () => {
       <ModeButtons activeMode={activeMode} onModeChange={handleModeChange} />
       
       <div className="flex-1 px-4">
-        {/* Enlarged car visualization section */}
-        <div className="mt-4 mb-6">
-          <CarVisualization psiValues={psiValues} />
-        </div>
+        <CarVisualization psiValues={psiValues} />
         
-        <div className="grid grid-cols-2 gap-8 mt-2">
+        <div className="grid grid-cols-2 gap-8 mt-4">
           <SuspensionControl 
             position="frontLeft" 
             psi={psiValues.frontLeft} 
